@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container {
+    text-align: center;
+    background-color: #333; /* Darker container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Updated max-width for smaller container */
+    width: 90%; /* Responsive width */
+    margin: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff; /* Light text color */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center; /* Center horizontally */
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #444; /* Darker cell background */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #555; /* Darker hover color */
+}
+
+.status {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ccc; /* Lighter text color */
+}
+
+.reset-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.reset-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 60px); /* Adjusted for smaller screens */
+    }
+
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .reset-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+a {
+    color: #1785fc; /* Light blue link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Display underline */
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+}
